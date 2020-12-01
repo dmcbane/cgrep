@@ -1,0 +1,4 @@
+#!/bin/bash
+rel=$(dirname "${BASH_SOURCE[0]}")
+abs=$(cd "$rel" && pwd)
+export PATH="$abs:$PATH"
