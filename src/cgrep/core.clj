@@ -11,5 +11,5 @@
   "Entry point for application "
   [& args]
   (println (count args))
-  (for [arg args]
-    (foo arg)))
+  (println args)
+  (println (count  (map foo args))))
