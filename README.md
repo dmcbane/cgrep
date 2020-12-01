@@ -1,10 +1,10 @@
 # cgrep
 
-A Clojure library designed to ... well, that part is up to you.
+A Clojure library designed to let me goof around and eventually grasp a few concepts.  i.e. this is me playing around with Clojure and I expect that it has no useful purpose for anyone else.
 
 ## Usage
 
-FIXME
+lein run
 
 ## License
 
