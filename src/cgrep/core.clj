@@ -3,9 +3,13 @@
 (defn foo
   "I don't do a whole lot."
   [x]
-  (println x "Hello, World!"))
+  (let [tmp (str "Hello, " x "!")]
+    (println tmp)
+    tmp))
 
 (defn -main
   "Entry point for application "
-  []
-  (foo "Why"))
+  [& args]
+  (println (count args))
+  (for [arg args]
+    (foo arg)))
