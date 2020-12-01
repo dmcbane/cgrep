@@ -10,6 +10,6 @@
 (defn -main
   "Entry point for application "
   [& args]
-  (println (count args))
-  (println args)
-  (println (count  (map foo args))))
+  (let [strings (map foo args)]
+    (for [s strings]
+         (println s))))
