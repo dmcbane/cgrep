@@ -7,9 +7,18 @@
     (println tmp)
     tmp))
 
+(defn lidar
+  "Off just a bit."
+  [dirname]
+  (let [directory (clojure.java.io/file dirname)
+        files (file-seq directory)]
+    (for [f files]
+      (let [ path (.getCanonicalPath f)]
+        (println path)
+        path))))
+
 (defn -main
   "Entry point for application "
   [& args]
-  (let [strings (map foo args)]
-    (for [s strings]
-         (println s))))
+  (for [p args]
+    (lidar p))))
